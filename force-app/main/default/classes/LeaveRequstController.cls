@@ -1,6 +1,7 @@
 public with sharing class LeaveRequstController {
   @AuraEnabled(cacheable=true)
   public static List<LeaveRequest__c> getMyLeaves() {
+    //method returning list of object leave request
     try {
       List<LeaveRequest__c> myLeaves = new List<LeaveRequest__c>();
       myLeaves = [
